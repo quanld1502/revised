@@ -21,4 +21,14 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+## How to make development env
+
+### 1. install ruby and extract code
+
+1. install ruby
+1. install nodejs, npm
+1. bundle install
+1. yarn install
+1. rake db:create
+1. rake db:migrate
+1. rake db:seed

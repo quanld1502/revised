@@ -1,0 +1,34 @@
+h4 Transactions
+table.table.table-striped.table-bordered
+  thead
+    th From
+    th To
+    th Amount
+  tbody
+    - @transactions.each do |t|
+      tr
+        td = t.from_entity.name
+        td = t.to_entity.name
+        td = t.amount_transaction
+h4 Users
+table.table.table-striped.table-bordered
+  thead
+    th Name
+    th Wallet Balance
+  tbody
+    - @users.each do |u|
+      tr
+        td = u.name
+        td = u.wallet_amount
+
+h4 Teams
+table.table.table-striped.table-bordered
+  thead
+    th Name
+    th Wallet Balance
+  tbody
+    - @teams.each do |u|
+      tr
+        td = u.name
+        td = u.wallet_amount
+

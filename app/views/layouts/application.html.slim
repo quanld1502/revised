@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    title Admin Page
+    link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'
+
+    = csrf_meta_tags
+    = csp_meta_tag
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    = stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    main
+      .container.py-lg-3.py-md-2.py-xs-1
+        .row.justify-content-center
+          .col-12
+            = yield
